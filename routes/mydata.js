@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var countValue = 0;
-/* GET users listing. */
+
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  countValue = countValue+1;
-  res.send('View count '+ countValue);
+  res.render('mydata', { title: 'Anurag Kolluru' });
 });
 
 module.exports = router;
